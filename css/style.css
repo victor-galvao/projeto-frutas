@@ -1,0 +1,187 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #0b1218;
+}
+
+.header {
+  grid-column: 1 / 9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #0b1218;
+  align-items: center;
+  border-bottom: 0.1px solid gray;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header .logo {
+  margin-left: 0px;
+}
+
+.header .logo img {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.menu ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 5px 0 0px;
+}
+
+.menu li a {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+}
+
+.icones {
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.icones img {
+  height: 28px;
+  cursor: pointer;
+}
+
+.icones img:hover {
+  height: 30px;
+  width: 30px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.texto {
+  grid-column: 1 / 3;
+  position: relative;
+  margin-left: 80px;
+  margin-top: 150px;
+  z-index: 200;
+}
+
+.texto h1,
+p {
+  color: white;
+  font-family: "Spartan", sans-serif;
+}
+
+.texto h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.texto p {
+  color: #bec7c7;
+  font-family: "Raleway", monospace;
+  font-size: 2rem;
+}
+
+.imagem-principal {
+  position: relative;
+  grid-column: 3 / 5;
+  background-image: url(/img/apple.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 800px;
+  height: 800px;
+}
+
+.btn {
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #bb2020;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #0b1218;
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  margin-bottom: 80px;
+}
+
+.sobre h1 {
+  grid-column: 1 / 9;
+  font-family: "Krub", sans-serif;
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  justify-self: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid white;
+}
+
+.sobre img {
+  grid-column: 2 / 5;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.sobre div {
+  grid-column: 5 / 8;
+  color: white;
+  font-family: "Raleway", monospace;
+  font-size: 1rem;
+  display: inline;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.sobre div h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.sobre div p {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 5px;
+  color: #7f7f7f;
+}
+
+.sobre .btn {
+  margin-left: 190px;
+  margin-bottom: 20px;
+}
